@@ -10,16 +10,42 @@
 
 ---
 
+## 🚀 Latest launch — WaveMascot
+
+<table>
+<tr>
+<td width="180" align="center">
+  <a href="https://github.com/Marescaa/wavemascot"><img src="https://raw.githubusercontent.com/Marescaa/wavemascot/main/docs/demo.gif" width="160" alt="WaveMascot demo"/></a>
+</td>
+<td>
+
+**[Wave](https://github.com/Marescaa/wavemascot)** is a pixel-art desktop mascot for Windows that tells you when **Claude Code** finishes, needs permission or hits its usage limit — and lets you **Allow / Deny** right from the mascot, without going back to the terminal.
+
+- Hooks into Claude Code's event system; responds in milliseconds and never blocks the CLI
+- Multi-session queueing, multi-monitor support, do-not-disturb hours and a companion mode
+- Fully customizable (themes, outfits, custom sprites, sounds) · English, Spanish & Portuguese
+- 100 % local: no network calls, no telemetry · one-click installer, no admin rights needed
+
+<a href="https://github.com/Marescaa/wavemascot/releases/latest/download/WaveMascot-Setup.exe"><img src="https://img.shields.io/badge/Download_for_Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Download"/></a>
+<a href="https://github.com/Marescaa/wavemascot/releases/latest"><img src="https://img.shields.io/github/v/release/Marescaa/wavemascot?style=for-the-badge&label=release" alt="Latest release"/></a>
+<img src="https://img.shields.io/badge/Python-PyQt6-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python · PyQt6"/>
+<img src="https://img.shields.io/github/license/Marescaa/wavemascot?style=for-the-badge" alt="License"/>
+
+</td>
+</tr>
+</table>
+
 ## About me
 
 I'm an advanced **Physics** and **Data Science** student at the **University of Buenos Aires (UBA)** with hands-on experience in data analysis, process automation and machine learning with Python.
 
 - 🔬 **2+ years as a Data Analyst** in a UBA physics lab — building data-cleaning pipelines, automated statistical reporting and model validation for research teams.
 - 📊 Comfortable across the analytics stack: **Python, SQL, BigQuery, Power BI** and ETL workflows.
-- 🤖 Currently exploring **LLM applications** (RAG, MCP, Claude API) and workflow automation with **n8n**.
+- 🛠️ Recently shipped **[WaveMascot](https://github.com/Marescaa/wavemascot)**, a Windows desktop companion for Claude Code (Python + PyQt6), from code to one-click installer and versioned releases.
+- 🤖 Exploring **LLM tooling** (RAG, MCP, Claude API, agent hooks) and workflow automation with **n8n**.
 - 🎯 Looking for **Data Analyst, Business Intelligence or Junior Data Scientist** roles.
 
-## Featured project
+## Other projects
 
 | Project | Description | Stack |
 |---|---|---|
@@ -36,6 +62,7 @@ I'm an advanced **Physics** and **Data Science** student at the **University of 
 <img src="https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white"/>
 <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
 <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/PyQt6-41CD52?style=for-the-badge&logo=qt&logoColor=white"/>
 
 **Cloud, BI & tooling**
 <br/>
