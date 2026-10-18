@@ -19,11 +19,10 @@ I'm an advanced **Physics** and **Data Science** student at the **University of 
 - 🤖 Currently exploring **LLM applications** (RAG, MCP, Claude API) and workflow automation with **n8n**.
 - 🎯 Looking for **Data Analyst, Business Intelligence or Junior Data Scientist** roles.
 
-## Featured projects
+## Featured project
 
 | Project | Description | Stack |
 |---|---|---|
-| [**Artemis II Simulation**](https://github.com/Marescaa/artemis2-simulation) | Numerical simulation of NASA's Artemis II free-return trajectory, solving the Earth–Moon–Orion three-body problem with Newtonian mechanics and an RK4 integrator. Reproduces the official trajectory with **< 3.4 % error**. | Python · NumPy · SciPy · Matplotlib |
 | [**UFCfop**](https://github.com/Marescaa/UFCfop) | Supervised binary classifier that predicts UFC fight outcomes using only pre-fight historical statistics. End-to-end pipeline: data collection, feature engineering, training and evaluation (precision, recall, AUC-ROC). | Python · scikit-learn · Pandas · Jupyter |
 
 ## Tech stack
