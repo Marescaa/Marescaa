@@ -44,6 +44,7 @@ I'm an advanced **Physics** and **Data Science** student at the **University of 
 
 | Project | Description | Stack |
 |---|---|---|
+| [**μMachining**](https://github.com/meilantiago/uMachining) | Closed-loop motion control firmware for a laser-micromachining linear axis (co-authored with Tiago Meilan). Field-oriented control of a stepper with a 21-bit magnetic encoder, cascaded position/velocity/field loops at ~20 kHz, auto-calibration and Python tooling for telemetry and error analysis. **1.2–1.9 µm RMS** following error over 255 mm of travel. | C++ · RP2040 · FOC · Python |
 | [**UFCfop**](https://github.com/Marescaa/UFCfop) | Supervised binary classifier that predicts UFC fight outcomes using only pre-fight historical statistics. End-to-end pipeline: data collection, feature engineering, training and evaluation (precision, recall, AUC-ROC). | Python · scikit-learn · Pandas · Jupyter |
 
 ## Tech stack
