@@ -30,6 +30,29 @@
   <img src="https://img.shields.io/badge/Python-PyQt6-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python · PyQt6"/>
 </p>
 
+## 🔬 Research engineering — μMachining
+
+<p align="center">
+  <a href="https://github.com/meilantiago/uMachining"><img src="assets/umachining-interface.png" width="720" alt="μMachining control interface with live position, following-error and loop-output telemetry"/></a>
+</p>
+
+**[μMachining](https://github.com/meilantiago/uMachining)** is the closed-loop motion-control firmware for a linear axis of a laser-micromachining setup, built with **Tiago Meilán**. A stepper motor is driven with **field-oriented control (FOC)** instead of steps, and a 21-bit magnetic encoder closes the loop, holding micrometre-level following error over the full travel.
+
+- Cascaded position → velocity → field loops at **~20 kHz** on a dedicated RP2040 core
+- Automatic encoder and commutation calibration, learned anti-cogging, homing and following-error safety cut-off
+- 1 kHz binary telemetry plus Python tooling: live control GUI, gain sweeps and error decomposition
+
+| Following error (moving) | Error at rest | Encoder resolution | Travel |
+|:---:|:---:|:---:|:---:|
+| **1.2–1.9 µm RMS** | **0.002 µm** | **0.08 nm / count** | 255 mm |
+
+<p align="center">
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++"/>
+  <img src="https://img.shields.io/badge/RP2040-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white" alt="RP2040"/>
+  <img src="https://img.shields.io/badge/PlatformIO-F5822A?style=for-the-badge&logo=platformio&logoColor=white" alt="PlatformIO"/>
+  <img src="https://img.shields.io/badge/Python-PyQt-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+</p>
+
 ## About me
 
 I'm an advanced **Physics** and **Data Science** student at the **University of Buenos Aires (UBA)** with hands-on experience in data analysis, process automation and machine learning with Python.
@@ -44,7 +67,6 @@ I'm an advanced **Physics** and **Data Science** student at the **University of 
 
 | Project | Description | Stack |
 |---|---|---|
-| [**μMachining**](https://github.com/meilantiago/uMachining) | Closed-loop motion control firmware for a laser-micromachining linear axis (co-authored with Tiago Meilan). Field-oriented control of a stepper with a 21-bit magnetic encoder, cascaded position/velocity/field loops at ~20 kHz, auto-calibration and Python tooling for telemetry and error analysis. **1.2–1.9 µm RMS** following error over 255 mm of travel. | C++ · RP2040 · FOC · Python |
 | [**UFCfop**](https://github.com/Marescaa/UFCfop) | Supervised binary classifier that predicts UFC fight outcomes using only pre-fight historical statistics. End-to-end pipeline: data collection, feature engineering, training and evaluation (precision, recall, AUC-ROC). | Python · scikit-learn · Pandas · Jupyter |
 
 ## Tech stack
