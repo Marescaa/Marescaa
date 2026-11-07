@@ -26,11 +26,11 @@ Si la API falla, sale `orange`.
 
 | Contribuciones | Estado     | Qué hace |
 |----------------|------------|----------|
-| 0–2            | `calm`     | Sentado: parpadea, mueve la cola y la cabeza, se lame la patita |
-| 3–6            | `happy`    | Da saltitos de un lado a otro con la cola arriba, corazoncitos |
-| 7–13           | `euphoric` | Corre de un lado a otro con saltos altos y destellos |
-| 14 o más       | `king`     | Corona, aura de brillos y saltos con giro |
-| (manual)       | `sleep`    | Dormido con "z z z" (solo si lo elegís a mano) |
+| 0–2            | `calm`     | Sentado: parpadea, mueve la cola y la cabeza, levanta la patita y se la lame |
+| 3–6            | `happy`    | Camina de un lado a otro con la cola arriba; en cada punta se sienta, corazoncitos y se da vuelta |
+| 7–13           | `euphoric` | Trota rápido de un lado a otro, inclinado hacia adelante, con destellos; en cada punta un saltito de festejo en el lugar |
+| 14 o más       | `king`     | Corona y aura de brillos; camina con porte y en una punta hace un salto con giro en el lugar |
+| (manual)       | `sleep`    | Dormido acostado como un pancito, respirando, con "z z z" (solo si lo elegís a mano) |
 
 Los umbrales son las constantes `CALM_MAX`, `HAPPY_MAX` y `EUPHORIC_MAX` al principio de `make_cat.py`.
 
