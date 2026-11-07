@@ -1,0 +1,34 @@
+name: Cat
+
+on:
+  schedule:
+    - cron: "20 0 * * *"   # just after midnight UTC, so the cat reflects the week that just ended
+  workflow_dispatch:
+  push:
+    paths: [.github/workflows/cat.yml, cat/make_cat.py]
+
+permissions:
+  contents: write
+
+concurrency: cat
+
+jobs:
+  cat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - run: python cat/make_cat.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit the cat if it changed
+        run: |
+          git add cat/cat.gif
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "cat: update mood"
+          git push -q
