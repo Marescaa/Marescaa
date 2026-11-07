@@ -14,7 +14,7 @@ on:
         description: "State (auto = from your commits)"
         type: choice
         default: auto
-        options: [auto, sleep, calm, happy, joyful]
+        options: [auto, sleep, small, medium, large]
   push:
     paths: [.github/workflows/cat.yml]
 
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: Marescaa/catfolio@v1
+      - uses: Marescaa/catfolio@v2
         with:
           coat: ${{ inputs.coat || vars.CAT_COAT || 'naranja' }}
           state: ${{ inputs.state || vars.CAT_STATE || 'auto' }}
