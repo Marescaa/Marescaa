@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="koi/koi.gif" width="256" alt="My koi"/>
+  <img src="cat/cat.gif" width="288" alt="My cat: sleeps, sits, walks or runs depending on my GitHub activity"/>
 </p>
 
 ---
