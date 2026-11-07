@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="cat/cat.gif" width="288" alt="My cat: sleeps, sits, walks or runs depending on my GitHub activity"/>
+  <img src="cat/cat.gif" width="384" alt="My pixel-art cat: sleeps, sits, strolls or gets the zoomies depending on my GitHub activity; its coat follows my languages"/>
 </p>
 
 ---
