@@ -8,8 +8,8 @@ on:
       coat:
         description: "Coat"
         type: choice
-        default: naranja
-        options: [gris, naranja, calico, siames, blanco, esmoquin, negro, atigrado]
+        default: orange
+        options: [gray, orange, calico, siamese, white, tuxedo, black, tabby]
       state:
         description: "State (auto = from your commits)"
         type: choice
@@ -28,9 +28,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: Marescaa/catfolio@v2
+      - uses: Marescaa/catfolio@v3
         with:
-          coat: ${{ inputs.coat || vars.CAT_COAT || 'naranja' }}
+          coat: ${{ inputs.coat || vars.CAT_COAT || 'orange' }}
           state: ${{ inputs.state || vars.CAT_STATE || 'auto' }}
       - name: Commit the cat if it changed
         run: |
