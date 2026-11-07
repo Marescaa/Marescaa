@@ -8,6 +8,10 @@
   <img src="https://img.shields.io/badge/Open%20to%20work-2EA44F?style=flat-square" alt="Open to work"/>
 </p>
 
+<p align="center">
+  <img src="koi/koi.gif" width="256" alt="My koi"/>
+</p>
+
 ---
 
 ## 🚀 Latest launch — WaveMascot
