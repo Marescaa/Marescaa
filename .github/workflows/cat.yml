@@ -6,17 +6,17 @@ on:
   workflow_dispatch:
     inputs:
       coat:
-        description: "Coat (auto = from your languages)"
+        description: "Coat"
         type: choice
-        default: auto
-        options: [auto, gray, orange, calico, siamese, white, tuxedo, black, brown]
+        default: naranja
+        options: [gris, naranja, calico, siames, blanco, esmoquin, negro, atigrado]
       state:
-        description: "State (auto = from your contributions)"
+        description: "State (auto = from your commits)"
         type: choice
         default: auto
-        options: [auto, sleep, calm, happy, euphoric, king]
+        options: [auto, sleep, calm, happy, joyful]
   push:
-    paths: [.github/workflows/cat.yml, cat/make_cat.py]
+    paths: [.github/workflows/cat.yml]
 
 permissions:
   contents: write
@@ -28,16 +28,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: Marescaa/catfolio@v1
         with:
-          python-version: "3.12"
-      - run: pip install pillow
-      - run: python cat/make_cat.py
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Change the defaults here, or set repository variables CAT_COAT / CAT_STATE.
-          CAT_COAT: ${{ inputs.coat || vars.CAT_COAT || 'auto' }}
-          CAT_STATE: ${{ inputs.state || vars.CAT_STATE || 'auto' }}
+          coat: ${{ inputs.coat || vars.CAT_COAT || 'naranja' }}
+          state: ${{ inputs.state || vars.CAT_STATE || 'auto' }}
       - name: Commit the cat if it changed
         run: |
           git add cat/cat.gif
