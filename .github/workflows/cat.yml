@@ -4,6 +4,17 @@ on:
   schedule:
     - cron: "20 0 * * *"   # just after midnight UTC, so the cat reflects the week that just ended
   workflow_dispatch:
+    inputs:
+      coat:
+        description: "Coat (auto = from your languages)"
+        type: choice
+        default: auto
+        options: [auto, gray, orange, calico, siamese, white, tuxedo, black, brown]
+      state:
+        description: "State (auto = from your contributions)"
+        type: choice
+        default: auto
+        options: [auto, sleep, calm, happy, euphoric, king]
   push:
     paths: [.github/workflows/cat.yml, cat/make_cat.py]
 
@@ -24,6 +35,9 @@ jobs:
       - run: python cat/make_cat.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Change the defaults here, or set repository variables CAT_COAT / CAT_STATE.
+          CAT_COAT: ${{ inputs.coat || vars.CAT_COAT || 'auto' }}
+          CAT_STATE: ${{ inputs.state || vars.CAT_STATE || 'auto' }}
       - name: Commit the cat if it changed
         run: |
           git add cat/cat.gif
